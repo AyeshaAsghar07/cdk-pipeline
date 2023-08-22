@@ -48,4 +48,3 @@ jobs:
         if: always()
         run: |
           rm -rf ~/.aws
-fix: timeout · mysense-ai/PipelinesDataScience@20f5cd4 
