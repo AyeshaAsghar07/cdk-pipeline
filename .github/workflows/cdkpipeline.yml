@@ -41,7 +41,9 @@ jobs:
           echo "region=$REGION" >> ~/.aws/config
           echo "" >> ~/.aws/config
       - name: Deploy pipeline
-        run: yarn deploy:tools
+        run: |
+         cd PipelinesDataScience
+         yarn deploy:tools
         env:
           AWS_PROFILE: mysense-tools
       - name: Cleanup
