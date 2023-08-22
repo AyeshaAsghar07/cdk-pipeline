@@ -43,6 +43,9 @@ jobs:
       - name: Deploy pipeline
         run: |
          cd PipelinesDataScience
+         pwd
+         ls -la
+         git status
          yarn deploy:tools
         env:
           AWS_PROFILE: mysense-tools
